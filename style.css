@@ -1,0 +1,282 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin:0;
+    background-color: black;
+    color:white;
+    overflow:hidden;
+
+/* font-family: 'Roboto', sans-serif; */
+}
+
+.main{
+    display:flex;
+    height:100vh;
+    padding:0.25rem;
+}
+
+
+.sidebar{
+    /* height:300px; */
+    width:320px;
+    background-color: #000;
+    border-radius:1rem;
+    margin-right: 0.5rem;
+
+}
+
+
+.main-content{
+    background-color: #121212;
+    flex:1;
+    overflow:auto;
+    padding-left: 1rem;
+
+}
+
+.musicplayer{
+    background-color: black;
+    position:fixed;
+    bottom:0;
+    width: 100%;
+    height: 72px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav {
+    background-color: #121212;
+    border-radius: 1rem;
+    height: 100px;
+    /* width: 310px; */
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5rem 0.75rem;
+}
+
+.nav-option{
+    line-height: 2.5rem;
+    opacity: 0.7;
+    padding: 0.5rem 0.75rem;
+}
+
+
+.nav-option:hover{
+    opacity: 1;
+}
+
+.nav-option i{
+    font-size: 1.25rem;
+    /* margin-right: 0.5rem; */
+    /* padding-right: 0.5rem; */
+}
+
+.nav-option a{
+    font-size:1rem;
+    margin-left: 0.5rem;
+}
+
+
+.library{
+    background-color: #121212;
+    border-radius: 1rem;
+    height:100%;
+    margin-top: 0.5rem;
+}
+
+.options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lib-option img{
+    height: 1.25rem;
+    width:1.25rem;
+}
+
+
+.icons{
+    display: flex;
+}
+
+.icons i{
+    opacity: 0.5;
+    font-size: 1.25rem;
+    margin-right: 1rem;
+}
+
+.icons i:hover{
+    opacity: 1;
+}
+
+.box1{
+    background-color: #232323;
+    height:9rem;
+    border-radius: 1rem;
+    margin:0.5rem 0 0.75rem 0;
+    padding: 0.5rem 1rem;
+}
+
+.box1 .p1{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.box1 .p2{
+    font-size: 0.80rem;
+    opacity: 0.8;
+}
+
+.badge{
+    border: none;
+    border-radius: 6rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+    padding:0.25rem 1rem;
+    line-height: 2rem;
+    width: fit-content;
+}
+
+
+/* main-content */
+
+.sticky-nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #121212;
+    z-index: 10;
+    /* border: 2px solid black; */
+}
+
+.sticky-nav-icons{
+    margin-left: 0.5rem;
+}
+
+.sticky-nav-icons img{
+    height:1.75rem;
+    width:1.75rem;
+}
+
+.sticky-nav-badges{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sticky-nav-badges button{
+    margin: 0.75rem;
+}
+
+.dark-badge{
+    background-color: #000;
+    color:#fff;
+}
+
+.sticky-nav-badges .dark-badge i{
+    margin-right: 0.5rem;
+}
+
+@media(max-width:1000px){
+    .hide{
+        display:none;
+    }
+}
+
+.cards{
+    background-color: #232323;
+    border-radius: 1rem;
+    width: 9.75rem;
+    padding:1rem;
+    margin-left: 1.75rem;
+    margin-bottom: 1.5rem;
+
+}
+
+.cards-container{
+    display:flex;
+    flex-wrap: wrap;
+    /* justify-content: space-evenly; this not works  */
+}
+
+.card-img{
+    width:100%;
+    border-radius: 1rem;
+}
+
+.card-title{
+    font-weight: 600;
+}
+
+.card-info{
+    font-size: 0.75rem;
+    opacity:0.5;
+}
+
+.footer{
+    height:300px;
+    display:flex;
+    align-items: center;
+    justify-content: center ;
+}
+
+.line{
+    border-top: 1px solid white;
+    height:60%;
+    width:90%;
+    opacity: 0.5;
+}
+
+.musicplayer{
+    display:flex ;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.album{
+    width:25%;
+}
+
+
+.player{
+    width:50%;
+    
+}
+.playercontrols{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.musicrange{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.rangebar{
+    width:50%;
+}
+
+
+.player-control-icon{
+    height:1.2rem;
+    margin-right: 1.5rem;
+    opacity: 0.5;
+
+}
+
+.player-control-icon:hover{
+    opacity: 1;
+}
+
+.controls{
+    width:25%;
+
+
+
+
